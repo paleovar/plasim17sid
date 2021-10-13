@@ -1,18 +1,30 @@
-# README
+# README PlaSim17-LSG with sea ice dynamics
 
-PlaSim-LSG \[1-3\] with a component for sea ice dynamics adapted from MITgcm \[4-8\].
-Sea ice dynamics are modelled with the classical non-linear viscous-plastic rheology with an elliptical yield curve by Hibler, 1979 \[6\] in the implementation by Zhang and Hibler, 1997 \[7\].
-Extended description and initial tests will be published in the Conference Proceedings of VI ECCOMAS Young Investigators Conference 2021 (under review).
+This repository holds an adapted version of the simplified general circulation model PlaSim-LSG \[1-3\] with a component for sea ice dynamics adapted from the more complex general circulation model MITgcm \[4-8\].
+Sea ice dynamics are modelled with the viscous-plastic rheology by Hibler, 1979 \[6\] in the implementation by Zhang and Hibler, 1997 \[7\].
+An extended abstract covering initial tests and a description of this model extension is currently under review for publication in the Conference Proceedings of VI ECCOMAS Young Investigators Conference 2021.
 
 The original code stack for PlaSim v17 can be obtained from: https://www.mi.uni-hamburg.de/en/arbeitsgruppen/theoretische-meteorologie/modelle/plasim.html
 
-The code stack from MITgcm can be obtained from: https://doi.org/10.5281/zenodo.1409237 and is documented at https://mitgcm.readthedocs.io/en/latest/.
+The code stack from MITgcm can be obtained from: https://doi.org/10.5281/zenodo.1409237 and is documented at https://mitgcm.readthedocs.io/en/latest/. The code of the sea ice dynamics component is based upon MITgcm *checkpoint67m*, Oct 16, 2019.
 
-Additional changes to the model and transient capabilities by Heather Andres as documented in \[9\].
+For a description of model changes beyond the the component for sea ice dynamics and for the transient capabilities refer to Andres and Tarasov, 2018 \[9\].
 
-Supporting the PaleoPlaSim model which is in development at the Institute of Environmental Physics Heidelberg.
+Note that this model configuration is still under development and that this repository is currently being populated. Therefore, the code is already prepared for transient simulations (see \[9\]) but not equipped with the necessary handling of boundary conditions. In the future, a detailed documentation and tutorials will be provided within the scope of the "PaleoPlaSim" model version which is in development at Memorial University of Newfoundland, Canada and at the Institute of Environmental Physics Heidelberg, Germany. For now, as a starting point for the coupled model with sea ice dynamics, see `./model/icedyn`.
 
-Moritz Adam, Institute of Environmental Physics Heidelberg, October 2021
+Please reach out to the authors for questions:
+
+Moritz Adam,  
+*Institute of Environmental Physics Heidelberg, Germany*
+
+Heather J. Andres,  
+*Memorial University of Newfoundland, St. John's NL, Canada*
+
+Kira Rehfeld,  
+*Geo- und Umweltforschungszentrum, Eberhard Karls Universität Tübingen, Germany* and  
+*Institute of Environmental Physics, Heidelberg, Germany*
+
+October 2021
 
 ## References
 
